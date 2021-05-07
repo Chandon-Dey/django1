@@ -1,0 +1,31 @@
+
+{% include 'header.html'%}
+
+{% include 'navbar.html'%}
+
+{% for post in posts %}
+    <div id="about" class="about">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-12">
+                 <div class="titlepage">
+                    <h2>Recent<strong class="white black"> Posts</strong></h2>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+                 </div>
+              </div>
+           </div>
+           <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                 <div class="about-box">
+                    <figure><img src="{{ post.thumbnail.url }}" alt="#" /></figure>
+                    <h3>{{post.title}}</h3>
+                    <p>{{post.description}}</p>
+                 </div>
+                 <a class="read_more" href="#">Read More</a>
+              </div>
+           </div>
+        </div>
+     </div>
+     {% endfor %}
+
+     {% include 'footer.html' %}
