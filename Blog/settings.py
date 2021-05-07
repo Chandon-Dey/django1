@@ -131,7 +131,6 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media/' 
-
 AWS_ACCESS_KEY_ID = 'AKIARVGPJVYVATR5L7HQ'
 AWS_SECRET_ACCESS_KEY = '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'
 AWS_STORAGE_BUCKET_NAME = 'bucketeer-877dd773-51d8-45f1-bff8-64ae71ebc53d'
